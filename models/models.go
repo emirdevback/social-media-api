@@ -13,5 +13,15 @@ type Post struct {
 	LikeCount int    `json:"like_count"`
 }
 
+type DeletePostRequest struct {
+	AdminPassword string `json:"admin_password"`
+}
+
+type ChangePasswordRequest struct {
+	Username     string `json:"nusername"`
+	Password     string `json:n_password`
+	New_password string `json:"new_password"`
+}
+
 var Users []User
 var Posts []Post
